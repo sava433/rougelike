@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@900&display=swap');
+
+body {
+    font-family: sans-serif , inter ;
+    margin: 0;  /*не забывай указывать, чтобы не было пустот*/
+    width: 100vw; /*Адаптивный размер по ширине области просмотра браузера*/
+}
+header{
+    height: 35vh;
+    background-color: #78785E;
+    display: grid; /* в шапке 2 элемента div с изображениями внутри и h2. сделала из шапки грид сетку. В итоге div сверху с 3 ихображениями и снизу h2*/
+}
+.logo{  /* Это div с изображениями, тоже сделала из него грид сетку и применила фиксированные размеры 1fr*/
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+header>h2{
+    text-align: center;
+    color: white;
+    font-family: 'Inter';
+    font-size: 30px;
+    
+}
+.logo>img{ /*Настроика размера изображений*/
+    height: 25vh;
+    width: 33.3vw;
+}
+.one{
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.one>.text{
+    width: 600px;
+    margin-left: 5vw;/*Отступ текста слева, если не нужно можно удалить, либо сделать больше/меньше*/
+}
+.one>.imgg{
+    display: grid;
+    margin-right: 15vw;
+}
+.imgg>img{
+    display: flex;
+    height:"138px";
+    width:"342px";
+    align-content: space-around;
+    border-radius: 30px;
+    }
+.two{
+    background-color: #78785E;
+    text-align: center;
+    color: white;
+    font-family: 'Inter';
+    font-size: 30px
+}
+.three{
+    height: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    border-radius: 30px;
+}
+.three>.text2{
+    width: 600px;
+    margin-left: 100px; 
+}
+.three>img{
+    height:"307px";
+    width:"483px";
+    flex-wrap: wrap;
+    align-content: space-around;
+    border-radius: 30px;
+}
+footer{
+    height: 80px;
+    background-color: #78785E;
+    background-color: #78785E;
+    text-align: center;
+    color: white;
+    font-family: 'Inter';
+}
+
